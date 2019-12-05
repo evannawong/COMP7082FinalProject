@@ -17,23 +17,23 @@
 
     <TextView
         android:id="@+id/pointOfInterest"
-        android:layout_width="280dp"
-        android:layout_height="30dp"
+        android:layout_width="218dp"
+        android:layout_height="62dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="176dp"
         android:layout_marginTop="600dp"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.183" />
 
     <Button
         android:id="@+id/addToListButton"
-        android:layout_width="43dp"
+        android:layout_width="37dp"
         android:layout_height="37dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="604dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="600dp"
         android:background="@drawable/ic_add_circle_blue_24dp"
         android:onClick="onAddToListClicked"
         android:src="@drawable/ic_star_yellow_24dp"
@@ -54,9 +54,9 @@
     <TextView
         android:id="@+id/viewFavoritesButton"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="688dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="636dp"
         android:text="View Favorites"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,13 +64,13 @@
 
     <Button
         android:id="@+id/favoritesButton"
-        android:layout_width="43dp"
+        android:layout_width="37dp"
         android:layout_height="37dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="600dp"
         android:background="@drawable/ic_star_yellow_24dp"
         android:onClick="onViewFavoritesClicked"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
