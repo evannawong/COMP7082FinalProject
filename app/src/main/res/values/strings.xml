@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Photo App</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_points_of_interest_maps">Map</string>
+</resources>
