@@ -153,7 +153,6 @@ public class PointsOfInterestMapsActivity extends FragmentActivity implements Lo
 
     @Override
     public boolean onMarkerClick(Marker marker) {
-        selectedLocationName = marker.getTitle();
         TextView pointOfInterest = findViewById(R.id.pointOfInterest);
         pointOfInterest.setText(marker.getTitle());
         return false;
@@ -170,6 +169,10 @@ public class PointsOfInterestMapsActivity extends FragmentActivity implements Lo
     }
 
     public void onAddToListClicked(View view) {
+        TextView pointOfInterest = findViewById(R.id.pointOfInterest);
+
+        selectedLocationName = pointOfInterest.getText().toString();
+        Toast.makeText(getApplicationContext(), selectedLocationName, Toast.LENGTH_LONG).show();
         if(selectedLocationName != null && selectedLocationName != ""){
             boolean insertData = databaseHelper.addData(selectedLocationName);
 
